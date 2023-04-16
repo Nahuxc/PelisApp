@@ -1,0 +1,55 @@
+.content {
+    background-color: white;
+    padding: 60px 40px;
+    margin: 0 auto;
+    max-width: 50%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #ddd;
+    min-width: 50%;
+}
+
+.content h2 {
+    color: rgb(0, 153, 255);
+    font-size: 1.5rem;
+}
+
+.form-CreateFilm{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-title{
+    width: 100%;
+    border: none;
+    margin: 10px 0px;
+    border-bottom: 2px solid rgb(44, 146, 255);
+    outline: none;
+}
+
+.input-description{
+    width: 100%;
+    border: none;
+    margin: 10px 0px;
+    border-bottom: 2px solid rgb(44, 146, 255);
+    outline: none;
+    resize: none;
+}
+
+
+.input-save{
+    color: white;
+    background-color: rgb(93, 149, 254);
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.input-save:hover{
+
+    background-color: rgb(19, 101, 253);
+
+}

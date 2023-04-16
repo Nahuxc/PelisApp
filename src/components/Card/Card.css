@@ -1,0 +1,81 @@
+.peli-item{
+    width: auto;
+    height: auto;
+    background-color: white;
+    padding: 40px 10px;
+    margin: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #ddd;
+}
+
+.title-peli{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 136, 255);
+
+}
+
+.description{
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(143, 143, 143);
+}
+
+.edit{
+    border: none;
+    color: white;
+    background-color: rgb(93, 149, 254);
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.edit:hover{
+
+    background-color: rgb(19, 101, 253);
+
+}
+
+.delete{
+    border: none;
+    color: white;
+    background-color: rgb(253, 100, 100);
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.delete:hover{
+
+    background-color: rgb(254, 41, 41);
+
+}
+
+
+.box-filmItem{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+/* card Edit */
+
+.box-editCard{
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 20px;
+    border-top: 2px solid rgb(211, 206, 206);
+}
+
+.title-edit{
+    color: rgb(19, 101, 253);
+    
+}
