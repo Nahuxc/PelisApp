@@ -55,7 +55,7 @@ const FormNewFilm = ({ setList }) => {
             className='input-title'
             name='img'
             type="text"
-            placeholder='poner el link de la imagen' />
+            placeholder='poner el link de la imagen' required />
           <textarea
             minLength={10}
             required
