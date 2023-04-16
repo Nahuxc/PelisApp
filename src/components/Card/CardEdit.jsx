@@ -15,11 +15,13 @@ const CardEdit = ({ film, getFilms, setList, setEdit }) => {
     const targetEdit = e.target
     const title = targetEdit.title.value
     const description = targetEdit.description.value
+    const img = targetEdit.img.value
 
     const filmEdit = {
       id,
       title,
-      description
+      description,
+      img
     }
 
     filmSaveLocalStorage[indice] = filmEdit
@@ -45,6 +47,11 @@ const CardEdit = ({ film, getFilms, setList, setEdit }) => {
           name='title'
           className="input-title"
           defaultValue={film.title} />
+          <input
+            className='input-title'
+            name='img'
+            type="text"
+            placeholder='poner el link de la imagen' />
         <textarea name="description"
           defaultValue={film.description}
           className='input-description' />

@@ -1,6 +1,5 @@
 .peli-item{
-    width: auto;
-    height: auto;
+    width: 25%;
     background-color: white;
     padding: 40px 10px;
     margin: 30px 20px;
@@ -13,6 +12,10 @@
     font-weight: 600;
     color: rgb(0, 136, 255);
 
+}
+
+.img-film{
+    width: 80%;
 }
 
 .description{

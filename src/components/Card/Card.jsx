@@ -39,6 +39,7 @@ const Card = ({ list, setList }) => {
         return (
           <div key={film.id} className='peli-item' >
             <h3 className='title-peli'>{film.title} </h3>
+            <img className='img-film' src={film.img} alt={film.img} />
             <p className='description'>{film.description} </p>
             <button onClick={() => setEdit(film.id)} className='edit'>Editar</button>
             <button onClick={() => deleteElement(film.id)} className='delete'>Borrar</button>

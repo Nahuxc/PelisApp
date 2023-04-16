@@ -7,7 +7,8 @@ const FormNewFilm = ({ setList }) => {
   const titleComponent = "Añadir Pelicula"
   const [filmState, setFilmState] = useState({
     title: "",
-    description: ""
+    description: "",
+    img: ""
   })
 
   const getDataForm = (e) => {
@@ -16,11 +17,13 @@ const FormNewFilm = ({ setList }) => {
     const dataForm = e.target
     const title = dataForm.title.value
     const description = dataForm.description.value
+    const img = dataForm.img.value
 
     const film = {
       id: new Date().getTime(),
       title,
-      description
+      description,
+      img
     }
 
     //guardamos los datos en el estado
@@ -48,6 +51,11 @@ const FormNewFilm = ({ setList }) => {
             name='title'
             type="text"
             placeholder='Titulo' required />
+            <input
+            className='input-title'
+            name='img'
+            type="text"
+            placeholder='poner el link de la imagen' />
           <textarea
             minLength={10}
             required
