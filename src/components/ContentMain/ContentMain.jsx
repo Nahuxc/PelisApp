@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Card from '../Card/Card'
 import FormNewFilm from '../FormNewFilm/FormNewFilm'
 import "./ContentMain.css"
+import Search from '../Search/Search'
 
 const ContentMain = () => {
   const [list, setList] = useState([])
@@ -12,13 +13,9 @@ const ContentMain = () => {
         <Card list={list} setList={setList} />
       </div>
       <div className='contentForms'>
-          <div className='contentForm'>
-            <form className='formSearch'>
-                <h2 className='title-Search'>Buscador</h2>
-                <input className='search' type="text" name="search" placeholder="Search..." />
-                <button className='btn-search'>Buscar</button>
-            </form>
-            <FormNewFilm setList={setList} />
+        <div className='contentForm'>
+          <Search list={list} setList={setList} />
+          <FormNewFilm setList={setList} />
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./FormNewFilm.css"
 import { saveDataLocalStorage } from '../../helpers/saveDataLocalStorage'
 
-const FormNewFilm = ({setList}) => {
+const FormNewFilm = ({ setList }) => {
 
   const titleComponent = "Añadir Pelicula"
   const [filmState, setFilmState] = useState({
@@ -10,7 +10,7 @@ const FormNewFilm = ({setList}) => {
     description: ""
   })
 
-  const getDataForm= (e)=>{
+  const getDataForm = (e) => {
 
     e.preventDefault()
     const dataForm = e.target
@@ -18,17 +18,17 @@ const FormNewFilm = ({setList}) => {
     const description = dataForm.description.value
 
     const film = {
-        id: new Date().getTime(),
-        title,
-        description
+      id: new Date().getTime(),
+      title,
+      description
     }
 
     //guardamos los datos en el estado
     setFilmState(film)
 
     //actualizar el estado del listado principal
-    setList((element)  =>{
-        return [...element, film]
+    setList((element) => {
+      return [...element, film]
     })
 
     //guardamos los datos en el LocalStorage
@@ -39,27 +39,27 @@ const FormNewFilm = ({setList}) => {
 
   return (
     <div className='box-FormNewFilm'>
-        <div className='content'>
-            <h2>{titleComponent} </h2>
-            <form onSubmit={getDataForm} className='form-CreateFilm'>
-                <input
-                minLength={4}
-                className='input-title'
-                name='title'
-                type="text"
-                placeholder='Titulo' required />
-                <textarea
-                minLength={10}
-                required
-                className='input-description'
-                name="description"
-                placeholder='descripcion' />
-                <input
-                className='input-save'
-                type="submit"
-                value="Guardar" />
-            </form>
-        </div>
+      <div className='content'>
+        <h2>{titleComponent} </h2>
+        <form onSubmit={getDataForm} className='form-CreateFilm'>
+          <input
+            minLength={4}
+            className='input-title'
+            name='title'
+            type="text"
+            placeholder='Titulo' required />
+          <textarea
+            minLength={10}
+            required
+            className='input-description'
+            name="description"
+            placeholder='descripcion' />
+          <input
+            className='input-save'
+            type="submit"
+            value="Guardar" />
+        </form>
+      </div>
 
     </div>
   )

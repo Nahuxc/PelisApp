@@ -1,0 +1,48 @@
+.formSearch {
+
+    background-color: white;
+    width: 50%;
+    padding: 20px 45px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #ddd;
+    text-align: center;
+}
+
+.title-Search {
+    font-size: 1.5rem;
+    margin: 15px 0px;
+    color: rgb(0, 136, 255);
+
+}
+
+.search {
+    margin: 10px 0px;
+    width: 100%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-bottom: 2px solid rgb(44, 146, 255);
+}
+
+.btn-search {
+    border: none;
+    color: white;
+    background-color: rgb(93, 149, 254);
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.btn-search:hover {
+
+    background-color: rgb(19, 101, 253);
+
+}
+
+.notFound{
+    color: red;
+}
