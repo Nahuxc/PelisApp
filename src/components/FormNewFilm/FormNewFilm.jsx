@@ -1,8 +1,12 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./FormNewFilm.css"
 import { saveDataLocalStorage } from '../../helpers/saveDataLocalStorage'
 
 const FormNewFilm = ({ setList }) => {
+
+  useEffect(()=>{
+    localStorage.setItem("films", JSON.stringify([]))
+  }, [])
 
   const titleComponent = "Añadir Pelicula"
   const [filmState, setFilmState] = useState({
