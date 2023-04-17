@@ -29,15 +29,17 @@ const FormNewFilm = ({ list, setList }) => {
     //guardamos los datos en el estado
     setFilmState(film)
 
-    //actualizar el estado del listado principal
+    
+    //guardamos los datos en el LocalStorage
+    saveDataLocalStorage("films", film)
 
+
+    //actualizar el estado del listado principal
     setList((element) => {
       return [...element, film]
     })
 
 
-    //guardamos los datos en el LocalStorage
-    saveDataLocalStorage("films", film)
 
   }
 
