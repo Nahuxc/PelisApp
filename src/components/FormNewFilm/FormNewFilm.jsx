@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./FormNewFilm.css"
 import { saveDataLocalStorage } from '../../helpers/saveDataLocalStorage'
 
-const FormNewFilm = ({ list, setList }) => {
+const FormNewFilm = ({ setList }) => {
 
   const titleComponent = "Añadir Pelicula"
   const [filmState, setFilmState] = useState({
@@ -29,17 +29,15 @@ const FormNewFilm = ({ list, setList }) => {
     //guardamos los datos en el estado
     setFilmState(film)
 
-    
+
     //guardamos los datos en el LocalStorage
     saveDataLocalStorage("films", film)
 
 
     //actualizar el estado del listado principal
-    if(localStorage.getItem("films")){
-      setList((element) => {
-        return [...element, film]
-      })
-    }
+    setList(async (element) => {
+      return [...element, film]
+    })
 
 
 
