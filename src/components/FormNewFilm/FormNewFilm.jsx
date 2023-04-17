@@ -35,9 +35,11 @@ const FormNewFilm = ({ list, setList }) => {
 
 
     //actualizar el estado del listado principal
-    setList((element) => {
-      return [...element, film]
-    })
+    if(localStorage.getItem("films")){
+      setList((element) => {
+        return [...element, film]
+      })
+    }
 
 
 
