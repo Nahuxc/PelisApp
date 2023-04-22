@@ -75,3 +75,31 @@ body{
     bottom: auto;
   }
 }
+
+@media only screen and (max-width: 426px) {
+
+  .navbar-logo {
+      width: 15%;
+      margin: 0 20px;
+  }
+
+  .sideBar{
+    top: 65px;
+    width: 200px;
+  }
+
+  .list-sideBar{
+    padding: 10px;
+    font-size: 15px;
+
+  }
+
+  .list-sideBar .fa-solid{
+    font-size: 15px;
+  }
+
+  .peli-item {
+    width: 80%;
+  }
+
+}

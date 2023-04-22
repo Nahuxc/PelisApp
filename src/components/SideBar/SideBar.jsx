@@ -28,7 +28,7 @@ const SideBar = () => {
         <div className='sideBar'>
             <div className='sideBar-content'>
                 <p className='list-sideBar' to={"/"}><i className="fa-solid fa-house"></i> Inicio</p> 
-                <p className='list-sideBar' to={"/productos"}><i class="fa-solid fa-film"></i> Peliculas</p> 
+                <p className='list-sideBar' to={"/productos"}><i className="fa-solid fa-film"></i> Peliculas</p> 
                 <p className='list-sideBar' to={"#"}> <i className="fa-solid fa-users"></i> Blog</p> 
                 <p className='list-sideBar' to={"#"}> <i className="fa-solid fa-phone"></i> Contacto</p>
             </div>
