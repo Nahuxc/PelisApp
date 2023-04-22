@@ -51,6 +51,7 @@ const CardEdit = ({ film, getFilms, setList, setEdit }) => {
             className='input-title'
             name='img'
             type="text"
+            defaultValue={film.img}
             placeholder='poner el link de la imagen' />
         <textarea name="description"
           defaultValue={film.description}

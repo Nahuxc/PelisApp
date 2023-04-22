@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import "./FormNewFilm.css"
 import { saveDataLocalStorage } from '../../helpers/saveDataLocalStorage'
 
