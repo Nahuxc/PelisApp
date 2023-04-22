@@ -1,17 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, {useState } from 'react'
 import Card from '../Card/Card'
 import FormNewFilm from '../FormNewFilm/FormNewFilm'
 import "./ContentMain.css"
 import Search from '../Search/Search'
 
 const ContentMain = () => {
-
-  if(!localStorage.getItem("films")){
-    useEffect(()=>{
-      localStorage.setItem("films", JSON.stringify([]))
-    }, [])
-  }
-
 
   const [list, setList] = useState([])
 
