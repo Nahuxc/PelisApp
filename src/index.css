@@ -9,3 +9,69 @@ body{
   position: relative;
   min-height: 100vh;
 }
+
+
+/* media query */
+
+@media only screen and (max-width: 769px) {
+
+  .box-navbar {
+    background: linear-gradient(to right, #ffffff, rgb(255, 255, 255));
+    justify-content: center;
+    box-shadow: 0 0 5px #222;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+  }
+  .navbar-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar-navigation li {
+      
+      font-size: 20px;
+      margin: 0px 20px;
+  }
+
+  .navbar-navigation i {
+      font-size: 10px;
+      justify-content: space-between;
+      width: 100%;
+  }
+
+  .navbar-logo {
+      width: 10%;
+      margin: 0 20px;
+  }
+
+  .box-filmItem {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contentMain {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .contentForms{
+    border-top: 1px solid #ddd;
+    border-left: none;
+
+  }
+
+  .peli-item {
+    width: 60%;
+  }
+
+  .footer{
+    bottom: auto;
+  }
+}

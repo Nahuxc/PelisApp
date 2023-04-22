@@ -35,7 +35,7 @@ const FormNewFilm = ({ setList }) => {
 
 
     //actualizar el estado del listado principal
-    setList(async (element) => {
+    setList((element) => {
       return [...element, film]
     })
 
