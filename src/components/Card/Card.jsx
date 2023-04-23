@@ -35,7 +35,7 @@ const Card = ({ list, setList }) => {
 
   return (
     <div className='box-filmItem'>
-      {list != null && list.map((film) => {
+      {list == [] || list != null && list.map((film) => {
         return (
           <div key={film.id} className='peli-item' >
             <h3 className='title-peli'>{film.title} </h3>
