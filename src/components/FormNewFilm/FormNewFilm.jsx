@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./FormNewFilm.css"
 import { saveDataLocalStorage } from '../../helpers/saveDataLocalStorage'
 
-const FormNewFilm = ({ list, setList }) => {
+const FormNewFilm = ({ setList }) => {
 
   const titleComponent = "Añadir Pelicula"
   const [filmState, setFilmState] = useState({
@@ -35,7 +35,9 @@ const FormNewFilm = ({ list, setList }) => {
 
 
     //actualizar el estado del listado principal
-    setList([...list, film])
+    setList((element)=>{
+      return [...element, film]
+    })
 
 
 

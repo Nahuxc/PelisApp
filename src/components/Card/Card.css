@@ -1,26 +1,30 @@
 .peli-item{
-    width: 25%;
+    width: 30%;
     background-color: white;
     padding: 40px 10px;
     margin: 30px 20px;
     border-radius: 15px;
     box-shadow: 0 0 10px #ddd;
+    
 }
 
 .title-peli{
     font-size: 20px;
     font-weight: 600;
     color: rgb(0, 136, 255);
+    word-break:break-all;
 
 }
 
 .img-film{
     width: 80%;
+    word-break:break-all;
 }
 
 .description{
     font-size: 15px;
     font-weight: 600;
+    word-break:break-all;
     color: rgb(143, 143, 143);
 }
 

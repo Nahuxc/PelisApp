@@ -1,8 +1,8 @@
 import React, {useState, useEffect } from 'react'
 import Card from '../Card/Card'
 import FormNewFilm from '../FormNewFilm/FormNewFilm'
-import "./ContentMain.css"
 import Search from '../Search/Search'
+import "./ContentMain.css"
 
 const ContentMain = () => {
 
@@ -22,7 +22,7 @@ const ContentMain = () => {
       <div className='contentForms'>
         <div className='contentForm'>
           <Search list={list} setList={setList} />
-          <FormNewFilm list={list} setList={setList} />
+          <FormNewFilm setList={setList} />
         </div>
       </div>
     </div>
