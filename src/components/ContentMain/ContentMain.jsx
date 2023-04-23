@@ -1,4 +1,4 @@
-import React, {useState } from 'react'
+import React, {useState, useEffect } from 'react'
 import Card from '../Card/Card'
 import FormNewFilm from '../FormNewFilm/FormNewFilm'
 import "./ContentMain.css"
