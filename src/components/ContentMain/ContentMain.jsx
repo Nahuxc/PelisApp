@@ -10,7 +10,7 @@ const ContentMain = () => {
 
   if(!localStorage.getItem("films")){
     useEffect(()=>{
-      localStorage.setItem("films", JSON.stringify([]))
+      localStorage.setItem("films", JSON.stringify(list))
     }, [])
   }
 
@@ -22,7 +22,7 @@ const ContentMain = () => {
       <div className='contentForms'>
         <div className='contentForm'>
           <Search list={list} setList={setList} />
-          <FormNewFilm setList={setList} />
+          <FormNewFilm list={list} setList={setList} />
         </div>
       </div>
     </div>
