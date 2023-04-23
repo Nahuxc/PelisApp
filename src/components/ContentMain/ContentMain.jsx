@@ -8,6 +8,12 @@ const ContentMain = () => {
 
   const [list, setList] = useState([])
 
+  if(!localStorage.getItem("films")){
+    useEffect(()=>{
+      localStorage.setItem("films", JSON.stringify([]))
+    }, [])
+  }
+
   return (
     <div className='contentMain'>
       <div className='contentCards'>

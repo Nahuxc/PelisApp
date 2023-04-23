@@ -6,12 +6,6 @@ import Footer from './components/Footer/Footer'
 
 function App() {
 
-  if(!localStorage.getItem("films")){
-    useEffect(()=>{
-      localStorage.setItem("films", JSON.stringify([]))
-    }, [])
-  }
-
   return (
     <div className="App">
       <NavBar />
