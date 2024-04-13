@@ -54,17 +54,20 @@ const FormNewFilm = ({ setList }) => {
             className='input-title'
             name='title'
             type="text"
+            value="super mario bros"
             placeholder='Titulo' required />
             <input
             className='input-title'
             name='img'
             type="text"
+            value="https://www.universalpictures-latam.com/tl_files/content/movies/super_mario_bros/posters/03.jpg"
             placeholder='poner el link de la imagen' required />
           <textarea
-            minLength={10}
+            minLength={5}
             required
             className='input-description'
             name="description"
+            value="Nueva pelicula"
             placeholder='descripcion' />
           <input
             className='input-save'
