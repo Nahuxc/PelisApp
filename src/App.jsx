@@ -1,17 +1,16 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import './App.css'
 import NavBar from "./components/NavBar/NavBar"
 import ContentMain from './components/ContentMain/ContentMain'
-import Footer from './components/Footer/Footer'
+
 
 function App() {
 
   return (
-    <div className="App">
+    <Fragment>
       <NavBar />
       <ContentMain  />
-      <Footer />
-    </div>
+    </Fragment>
   )
 }
 

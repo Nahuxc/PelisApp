@@ -6,8 +6,8 @@
     grid-template-rows: auto;
     padding: 0;
     position: relative;
-    min-height: 88vh;
     padding-bottom: 20px;
+    height: 86vh;
 }
 
 .contentCards{
